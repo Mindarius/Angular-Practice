@@ -1,0 +1,35 @@
+<!--
+<div>
+  <img src="{{ imgURL }}" alt="NDSU Logo" width="100%" height="width/2"/>
+</div>
+<input type="text" #phoneNumber (keyup) = 0/>
+<h2>{{ phoneNumber.value }}</h2>
+<img [src]=imgURL>
+-->
+
+<!-- <div>
+  <div
+    [class.special]="isSpecial"
+    (mouseover)="onMouseOver()"
+    (mouseout)="onMouseOver()"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit ab
+    inventore sit optio atque dolorem tempore, suscipit minima rerum doloribus
+    commodi porro accusamus ducimus quibusdam esse temporibus neque corporis.
+  </div>
+  <div>
+    Dolore minus enim nostrum magni molestiae quo nobis distinctio voluptates
+    omnis cum a odio, nemo dolor illum atque minima fuga porro rerum incidunt
+    praesentium suscipit possimus aut quam. Numquam, voluptate.
+  </div>
+  <div>
+    Voluptas impedit illum beatae labore, dolor ipsum qui eum saepe suscipit
+    debitis? Ipsum repellendus pariatur, officia, assumenda doloremque beatae
+    dolores omnis nesciunt neque, in commodi nihil alias sunt veniam eveniet!
+  </div>
+</div> -->
+
+<input type="text" [(ngModel)]="username" />
+<button [disabled]="checkEmpty()" (click)="onClick()">
+  Click me, {{ username }}!
+</button>
